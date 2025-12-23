@@ -1,0 +1,45 @@
+{
+  "build": {
+    "core": "stm32",
+    "cpu": "cortex-m4",
+    "extra_flags": "-DSTM32L4xx -DSTM32L431xx",
+    "f_cpu": "80000000L",
+    "framework_extra_flags": {
+      "arduino": "-D__CORTEX_M=4"
+    },
+    "mcu": "stm32l431c8t6",
+    "variant": "C:/Users/frm19/.platformio/platforms/ststm32/boards/variants/CUSTOM_L431XX_LORA"
+  },
+  "debug": {
+    "jlink_device": "STM32L431C8",
+    "openocd_target": "stm32l4x",
+    "svd_path": "STM32L431xx.svd"
+  },
+  "frameworks": [
+    "arduino",
+    "cmsis",
+    "stm32cube"
+  ],
+  "platforms": [
+    "ststm32"
+  ],
+  "name": "Custom STM32L431C8T6 LoRa Board",
+  "upload": {
+    "disable_flushing": false,
+    "maximum_ram_size": 65536,
+    "maximum_size": 262144,
+    "protocol": "stlink",
+    "protocols": [
+      "stlink",
+      "jlink",
+      "blackmagic",
+      "dfu",
+      "serial"
+    ],
+    "require_upload_port": true,
+    "use_1200bps_touch": false,
+    "wait_for_upload_port": false
+  },
+  "url": "https://www.st.com/en/microcontrollers-microprocessors/stm32l431c8.html",
+  "vendor": "IoT-lab-fisika"
+}
