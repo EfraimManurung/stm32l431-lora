@@ -5,7 +5,7 @@
 // === Pin definitions (adjust ONLY if wiring differs) ===
 #define NSS PA4
 #define DIO0 PB1
-#define RST PA3 // Receiver reset pin (TX used PA8!)
+#define RST PA8
 #define DIO1 PB10
 #define LED_BUILTIN PC13
 #define LORA_ON PB15
